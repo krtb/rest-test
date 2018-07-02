@@ -1,0 +1,8 @@
+<h1>Edit Octopus</h1>
+<%= form_for(@octopus) do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %><br>
+<%= f.label :legs %>
+<%= f.text_field :legs %><br>
+<%= f.submit %>
+<% end %>

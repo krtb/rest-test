@@ -1,0 +1,11 @@
+<h1>Index</h1>
+<ol>
+<% @octopi.each do |octopus| %>
+<li>
+  <%= link_to octopus.name, octopus_path(octopus) %> <%= link_to 'Edit', edit_octopus_path(octopus) %> <br>
+<button><%= link_to 'Delete', "octopi/#{octopus.id}", method:'delete'  %></button>
+</li>
+<% end %>
+</ol>
+
+<button><%= link_to 'New', new_octopus_path %></button>

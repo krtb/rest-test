@@ -1,0 +1,9 @@
+<h1>New Octopus</h1>
+<%= form_for(@octopus) do |f| %>
+<%= f.label :name %>:<%= f.text_field :name %><br>
+<br>
+<%= f.label :legs %>:<%= f.text_field :legs %><br>
+<br>
+<%= f.submit %>
+<% end %>
+<%= link_to "Home", octopi_path %>
